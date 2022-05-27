@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/reminders-app/static/css/main.d9edc835.css",
+    "main.js": "/reminders-app/static/js/main.ac9e3c09.js",
+    "static/js/787.f4928119.chunk.js": "/reminders-app/static/js/787.f4928119.chunk.js",
+    "index.html": "/reminders-app/index.html",
+    "main.d9edc835.css.map": "/reminders-app/static/css/main.d9edc835.css.map",
+    "main.ac9e3c09.js.map": "/reminders-app/static/js/main.ac9e3c09.js.map",
+    "787.f4928119.chunk.js.map": "/reminders-app/static/js/787.f4928119.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d9edc835.css",
+    "static/js/main.ac9e3c09.js"
+  ]
+}
