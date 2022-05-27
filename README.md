@@ -48,10 +48,19 @@ Users should be able to:
 - [React](https://reactjs.org/) - JS library
 - [Bootstrap](https://getbootstrap.com) - CSS Library
 
+### Data Flow
+
+Components
+
+- App
+  - InputForm
+  - FilterSelect
+  - Remove
+  - RemindersList
+    - Reminder
+
+All the state variables are held by the App component, since this is the common component that uses all the state variables and is at the top the tree (all the state variables were lifted up).
+
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Github - [Rodrigo Alexander Villalobos](https://github.com/Rravg)
