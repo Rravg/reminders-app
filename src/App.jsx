@@ -60,7 +60,13 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Reminders App</h1>
+      <h1 style={{
+        textAlign: 'center',
+        borderBottom: 'solid 1px',
+        padding: '1rem'
+      }}>
+        Reminders App
+      </h1>
       <InputForm
         userInput={userInput}
         setUserInput={setUserInput}
@@ -70,7 +76,7 @@ function App() {
         selectedFilter={selectedFilter}
         setSelectedFilter={setSelectedFilter}
       />
-      <Remove reminders={filteredList} setReminders={setReminders} />
+      <Remove reminders={reminders} setReminders={setReminders} />
       <RemindersList reminders={filteredList} setIsComplete={setIsComplete} />
     </div>
   );

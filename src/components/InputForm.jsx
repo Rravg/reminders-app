@@ -40,7 +40,12 @@ function InputForm(props) {
                 type="date"
                 onChange={handleDateChange}
             />
-            <button onClick={handleClick}>Addd Item</button>
+            <button onClick={handleClick}
+                type='button'
+                className="btn btn-primary"
+            >
+                Add Item
+            </button>
         </form>
     );
 }

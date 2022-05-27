@@ -8,7 +8,10 @@ function Remove(props) {
     }
 
     return (
-        <button onClick={handleClick}>
+        <button onClick={handleClick}
+            type='button'
+            className="btn btn-warning"
+        >
             Remove Completed
         </button>
     );
