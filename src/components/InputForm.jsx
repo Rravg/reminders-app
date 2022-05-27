@@ -26,19 +26,31 @@ function InputForm(props) {
     };
 
     return (
-        <form>
+        <form style={{
+            display: 'flex',
+            justifyContent: 'space-evenly',
+            marginBottom: '10px'
+        }}>
             <input
+                className='form-control'
                 value={props.userInput.reminderText}
                 id="reminderText"
                 type="text"
                 placeholder="What do you want to do?"
                 onChange={handleTextChange}
+                style={{
+                    width: '50%'
+                }}
             />
             <input
+                className='form-control'
                 value={props.userInput.dueDate}
                 id="dueDate"
                 type="date"
                 onChange={handleDateChange}
+                style={{
+                    width:'20%'
+                }}
             />
             <button onClick={handleClick}
                 type='button'

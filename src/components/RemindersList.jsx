@@ -17,7 +17,11 @@ function RemindersList(props) {
     });
 
     return (
-        <ul>
+        <ul className='list-group'
+            style={{
+                margin: '20px 5px'
+            }}
+        >
             {reminders}
         </ul>
     );

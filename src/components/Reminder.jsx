@@ -5,15 +5,17 @@ function Reminder(props) {
         props.setIsComplete(!props.isComplete, props.id);
     };
     return (
-        <li className='item'>
-            {props.reminderText} |{" "}
-            <span className='due-date'>due date: {props.dueDate} |{" "}</span>
-            <span className='is-complete'>Completed?:
-                <input type="checkbox"
-                    checked={props.isComplete}
-                    onChange={handleChange}
-                />
-            </span>
+        <li className="list-group-item d-flex justify-content-between" >
+            <input
+                className='form-check-input'
+                type="checkbox"
+                checked={props.isComplete}
+                onChange={handleChange}
+            />
+            <h6>
+                {props.reminderText}
+            </h6>
+            <span className="badge bg-info rounded-pill">{props.dueDate}</span>
         </li>
     );
 }
